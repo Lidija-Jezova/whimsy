@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // Specifies the location where the assembly is bundeled.
+    // In this case not important, because we use webpack
+    "outDir": "./dist/",
+    // Shows places where variable type is not specified
+    // Implicit any is restricted
+    // Explicit any is allowed
+    "noImplicitAny": true,
+    // Sets the module system for the program
+    "module": "ESNext",
+    // Specifies the version of the ES standard into which the code will compile.
+    "target": "es5",
+    // Allow writing jsx
+    "jsx": "react-jsx",
+    // Compiler will process not only .ts files, but .js files too
+    "allowJs": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    // With flag esModuleInterop we can import CommonJS modules in compliance with es6 modules spec
+    // require -> import
+    "esModuleInterop": true,
+    // Allow default imports from modules with no default export
+    // import * as packageName -> import packageName
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}

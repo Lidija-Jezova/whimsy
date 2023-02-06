@@ -1,13 +1,14 @@
-import React, {Suspense, useContext} from 'react';
+import React, {Suspense} from 'react';
 import './styles/index.scss'
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
-import {MainPageAsync} from "./pages/MainPage/MainPage.async";
-import {AboutPageAsync} from "./pages/AboutPage/AboutPage.async";
-import {useTheme} from "./theme/useTheme";
-import {classNames} from "./helpers/classNames";
+
+import {useTheme} from "app/providers/ThemeProvider";
+import {classNames} from "shared/lib/classNames/classNames";
+import {MainPage} from "pages/MainPage";
+import {AboutPage} from "pages/AboutPage";
 
 const App = () => {
 
@@ -16,11 +17,11 @@ const App = () => {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <MainPageAsync/>,
+            element: <MainPage/>,
         },
         {
             path: "/about",
-            element: <AboutPageAsync/>,
+            element: <AboutPage/>,
         },
     ]);
 

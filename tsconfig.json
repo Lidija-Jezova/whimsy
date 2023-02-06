@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    // Specifies the location where the assembly is bundeled.
+    // Specifies the location where the assembly is bundled.
     // In this case not important, because we use webpack
     "outDir": "./dist/",
     // Shows places where variable type is not specified
@@ -17,6 +17,9 @@
     "allowJs": true,
     "moduleResolution": "node",
     "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // With flag esModuleInterop we can import CommonJS modules in compliance with es6 modules spec
     // require -> import
     "esModuleInterop": true,

@@ -1,5 +1,9 @@
-.app.dark {
-  --bg-color: #fafaff;
+.app.light {
+  --bg-color: #fff;
+  --bg-navbar: #18192C;
+
   --primary-color: #22232A;
-  --secondary--color: #2c2c2f;
+  --secondary-color: #2c2c2f;
+
+  --inverted-primary-color: #fafaff;
 }

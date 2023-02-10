@@ -1,0 +1,14 @@
+.Navbar {
+  padding: 0.5rem 2rem;
+  grid-area: navbar;
+  height: var(--navbar-height);
+  background-color: var(--bg-navbar);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}

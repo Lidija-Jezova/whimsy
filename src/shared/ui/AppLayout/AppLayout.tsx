@@ -1,14 +1,23 @@
 import styles from './AppLayout.module.scss'
 import {Outlet} from "react-router-dom";
 import {classNames} from "shared/lib/classNames/classNames";
-import {Navbar} from "widgets/ui/Navbar/Navbar";
-import Footer from "widgets/ui/Footer/Footer";
+import {Navbar} from "widgets/Navbar/Navbar";
+import Footer from "widgets/Footer/Footer";
+import {Sidebar} from "widgets/Sidebar";
+import {useState} from "react";
 
 const AppLayout = () => {
+
+    const [collapsed, setCollapsed] = useState(false)
+
+    const toggleSidebarCollapse = () => {
+        setCollapsed(prev => !prev)
+    }
+
     return (
-        <div className={classNames(styles.AppLayout)}>
+        <div className={classNames(styles.AppLayout, {[styles.collapsed]: collapsed}, [])}>
             <Navbar/>
-            <aside>sidebar</aside>
+            <Sidebar toggleCollapse={toggleSidebarCollapse} />
             <main>
                 <Outlet/>
             </main>

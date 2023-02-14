@@ -2,20 +2,21 @@ import {ReactNode} from 'react';
 import styles from './AppLink.module.scss'
 import {classNames} from "shared/lib/classNames/classNames";
 import {Link, LinkProps} from "react-router-dom";
+import {ValueOf} from "shared/lib/valueOf/valueOf";
 
-export const AppLinkThemes = {
+export const AppLinkVariants = {
     PRIMARY: 'primary',
-    INVERTED: 'inverted'
+    INVERTED: 'inverted',
+    LIGHT: 'light',
+    DARK: 'dark',
 } as const
 
-type ValueOf<T> = T[keyof T];
-type AppLinkTheme = ValueOf<typeof AppLinkThemes>
+type AppLinkVariant = ValueOf<typeof AppLinkVariants>
 
 interface AppLinkProps extends LinkProps {
     children: ReactNode
     className?: string
-    // theme -> variant
-    theme?: AppLinkTheme
+    variant?: AppLinkVariant
 }
 
 export const AppLink = (props: AppLinkProps) => {
@@ -23,7 +24,7 @@ export const AppLink = (props: AppLinkProps) => {
     const {
         to,
         className,
-        theme = AppLinkThemes.PRIMARY,
+        variant = AppLinkVariants.PRIMARY,
         children,
         ...otherProps
     } = props
@@ -31,7 +32,7 @@ export const AppLink = (props: AppLinkProps) => {
     return (
         <Link
             to={to}
-            className={classNames(styles.AppLink, {}, [className, styles[theme]])}
+            className={classNames(styles.AppLink, {}, [className, styles[variant]])}
             {...otherProps}
         >
             {children}

@@ -1,7 +1,7 @@
 import styles from './Button.module.scss'
-import {classNames} from 'shared/lib/classNames/classNames';
-import type {ButtonHTMLAttributes} from 'react';
-import type {ValueOf} from 'shared/lib/valueOf/valueOf';
+import { classNames } from 'shared/lib/classNames/classNames'
+import type { ButtonHTMLAttributes } from 'react'
+import type { ValueOf } from 'shared/lib/valueOf/valueOf'
 
 export const ButtonVariants = {
     CLEAR: 'clear',
@@ -15,13 +15,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button = (props: ButtonProps) => {
-
-    const {
-        className,
-        children,
-        variant,
-        ...otherProps
-    } = props
+    const { className, children, variant, ...otherProps } = props
 
     return (
         <button
@@ -30,5 +24,5 @@ export const Button = (props: ButtonProps) => {
         >
             {children}
         </button>
-    );
-};
+    )
+}

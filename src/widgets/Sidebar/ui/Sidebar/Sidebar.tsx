@@ -15,6 +15,7 @@ export const Sidebar = (props: SidebarProps) => {
     return (
         <aside className={classNames(styles.Sidebar, {}, [className])}>
             <div className={styles.content}>
+                hello
                 <Button onClick={toggleCollapse}>Toggle</Button>
                 <LanguageSwitcher />
                 <nav>

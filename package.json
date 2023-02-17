@@ -6,7 +6,13 @@
   "scripts": {
     "start": "webpack serve --env port=3000",
     "build:prod": "webpack --env mode=production",
-    "build:dev": "webpack --env mode=development"
+    "build:dev": "webpack --env mode=development",
+    "lint:ts": "eslint \"**/*.{ts,tsx}\"",
+    "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
+    "lint:scss": "npx stylelint \"**/*.{css, scss}\"",
+    "lint:scss:fix": "npx stylelint \"**/*.{css, scss}\" --fix",
+    "prettier:check": "prettier \"**/*.{js, jsx, ts, tsx, css, scss}\" --check",
+    "prettier:fix": "prettier \"**/*.{js, jsx, ts, tsx, css, scss}\" --write"
   },
   "keywords": [],
   "author": "Lidija Jezova <lidija.jezova@gmail.com>",
@@ -39,6 +45,7 @@
     "css-loader": "6.6.0",
     "eslint": "8.22.0",
     "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-i18next": "^6.0.0-2",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -48,6 +55,8 @@
     "sass": "1.49.9",
     "sass-loader": "12.6.0",
     "style-loader": "3.3.1",
+    "stylelint": "^15.1.0",
+    "stylelint-config-standard-scss": "^7.0.1",
     "ts-loader": "9.2.6",
     "ts-node": "10.5.0",
     "typescript": "4.5.5",

@@ -1,15 +1,15 @@
 .Navbar {
-  padding: 0.5rem 2rem;
-  grid-area: navbar;
-  height: 6rem;
-  background-color: var(--navbar-bg);
-  color: var(--navbar-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    padding: 0.5rem 2rem;
+    grid-area: navbar;
+    height: 6rem;
+    background-color: var(--navbar-bg);
+    color: var(--navbar-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 ul {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
 }

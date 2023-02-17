@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import styles from './AppLink.module.scss'
 import { classNames } from 'shared/lib/classNames/classNames'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import type { LinkProps } from 'react-router-dom'
 import type { ValueOf } from 'shared/lib/valueOf/valueOf'
 

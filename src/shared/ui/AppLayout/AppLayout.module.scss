@@ -1,24 +1,24 @@
 .AppLayout {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 30rem 1fr;
-  grid-template-rows: 6rem auto 6rem;
-  grid-template-areas:
-          'navbar navbar'
-          'sidebar main'
-          'footer footer';
-  transition: grid-template-columns 0.5s ease 0s;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    grid-template-rows: 6rem auto 6rem;
+    grid-template-areas:
+        'navbar navbar'
+        'sidebar main'
+        'footer footer';
+    transition: grid-template-columns 0.5s ease 0s;
 }
 
 .collapsed {
-  grid-template-columns: 10rem 1fr;
+    grid-template-columns: 10rem 1fr;
 }
 
 aside {
-  grid-area: sidebar;
+    grid-area: sidebar;
 }
 
 main {
-  padding: 2rem;
-  grid-area: main;
+    padding: 2rem;
+    grid-area: main;
 }

@@ -1,5 +1,5 @@
-import webpack from 'webpack'
-import { BuildOptions } from './types/config'
+import type webpack from 'webpack'
+import type { BuildOptions } from './types/config'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
 export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {

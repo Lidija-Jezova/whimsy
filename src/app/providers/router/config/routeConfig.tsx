@@ -1,7 +1,7 @@
-import React from "react";
-import {MainPage} from "pages/MainPage";
-import {AboutPage} from "pages/AboutPage";
-import {RouteProps} from "react-router-dom";
+import React from 'react';
+import {MainPage} from 'pages/MainPage';
+import {AboutPage} from 'pages/AboutPage';
+import type {RouteProps} from 'react-router-dom';
 
 export const AppRoutes = {
     MAIN: 'main',

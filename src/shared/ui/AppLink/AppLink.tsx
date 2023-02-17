@@ -1,8 +1,9 @@
-import {ReactNode} from 'react';
+import type { ReactNode } from 'react'
 import styles from './AppLink.module.scss'
-import {classNames} from "shared/lib/classNames/classNames";
-import {Link, LinkProps} from "react-router-dom";
-import {ValueOf} from "shared/lib/valueOf/valueOf";
+import { classNames } from 'shared/lib/classNames/classNames'
+import { Link } from 'react-router-dom';
+import type { LinkProps } from 'react-router-dom'
+import type { ValueOf } from 'shared/lib/valueOf/valueOf'
 
 export const AppLinkVariants = {
     PRIMARY: 'primary',
@@ -20,14 +21,7 @@ interface AppLinkProps extends LinkProps {
 }
 
 export const AppLink = (props: AppLinkProps) => {
-
-    const {
-        to,
-        className,
-        variant = AppLinkVariants.PRIMARY,
-        children,
-        ...otherProps
-    } = props
+    const { to, className, variant = AppLinkVariants.PRIMARY, children, ...otherProps } = props
 
     return (
         <Link
@@ -37,5 +31,5 @@ export const AppLink = (props: AppLinkProps) => {
         >
             {children}
         </Link>
-    );
-};
+    )
+}

@@ -1,7 +1,7 @@
 import styles from './Button.module.scss'
-import {classNames} from "shared/lib/classNames/classNames";
-import {ButtonHTMLAttributes} from "react";
-import {ValueOf} from "shared/lib/valueOf/valueOf";
+import {classNames} from 'shared/lib/classNames/classNames';
+import type {ButtonHTMLAttributes} from 'react';
+import type {ValueOf} from 'shared/lib/valueOf/valueOf';
 
 export const ButtonVariants = {
     CLEAR: 'clear',

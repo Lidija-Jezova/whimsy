@@ -1,14 +1,10 @@
-import React from 'react';
-import {Link} from "react-router-dom";
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const MainPage = () => {
-    return (
-        <div>
-            <Link to={'/'}>Main</Link>
-            <Link to={'/about'}>About us</Link>
-            MAIN PAGE
-        </div>
-    );
-};
+    const { t } = useTranslation('main')
 
-export default MainPage;
+    return <div>{t('Main page')}</div>
+}
+
+export default MainPage

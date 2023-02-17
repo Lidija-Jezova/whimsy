@@ -1,8 +1,8 @@
 import styles from './Sidebar.module.scss'
-import {classNames} from "shared/lib/classNames/classNames";
-import {ReactNode, useState} from "react";
-import {ThemeSwitcher} from "features/ThemeSwitcher";
-import {Button} from "shared/ui/Button/Button";
+import { classNames } from 'shared/lib/classNames/classNames'
+import { ThemeSwitcher } from 'features/ThemeSwitcher'
+import { Button } from 'shared/ui/Button/Button'
+import { LanguageSwitcher } from 'features/LanguageSwitcher/ui/LanguageSwitcher'
 
 interface SidebarProps {
     className?: string
@@ -10,13 +10,13 @@ interface SidebarProps {
 }
 
 export const Sidebar = (props: SidebarProps) => {
-
-    const {className, toggleCollapse} = props
+    const { className, toggleCollapse } = props
 
     return (
         <aside className={classNames(styles.Sidebar, {}, [className])}>
             <div className={styles.content}>
                 <Button onClick={toggleCollapse}>Toggle</Button>
+                <LanguageSwitcher />
                 <nav>
                     <ul>
                         <li>My profile</li>
@@ -25,7 +25,7 @@ export const Sidebar = (props: SidebarProps) => {
                     </ul>
                 </nav>
             </div>
-            <ThemeSwitcher className={styles.themeSwitcher}/>
+            <ThemeSwitcher className={styles.themeSwitcher} />
         </aside>
-    );
-};
+    )
+}

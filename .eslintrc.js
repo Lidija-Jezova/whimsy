@@ -4,6 +4,7 @@ module.exports = {
         browser: true,
         es2021: true,
         node: true,
+        jest: true,
     },
     extends: [
         'eslint:recommended',
@@ -11,7 +12,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'prettier',
-        'plugin:i18next/recommended'
+        'plugin:i18next/recommended',
     ],
     overrides: [],
     parser: '@typescript-eslint/parser',
@@ -36,6 +37,7 @@ module.exports = {
                 prefer: 'type-imports',
             },
         ],
-        'i18next/no-literal-string': 'warn'
+        'i18next/no-literal-string': ['warn', { mode: 'jsx-only' }],
+        'no-unused-vars': 'warn',
     },
 }

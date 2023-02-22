@@ -17,11 +17,7 @@ const AppRouter = () => {
         },
     ])
 
-    return (
-        <Suspense fallback={<div>Loading...</div>}>
-            <RouterProvider router={router} />
-        </Suspense>
-    )
+    return <RouterProvider router={router} />
 }
 
 export default AppRouter

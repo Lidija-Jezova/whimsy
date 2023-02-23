@@ -14,7 +14,6 @@ module.exports = {
         'prettier',
         'plugin:i18next/recommended',
     ],
-    overrides: [],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
@@ -37,7 +36,22 @@ module.exports = {
                 prefer: 'type-imports',
             },
         ],
-        'i18next/no-literal-string': ['warn', { mode: 'jsx-only' }],
+        'i18next/no-literal-string': 'warn',
+        //         [
+        //             'warn',
+        // {
+        //     'jsx-attributes': { exclude : ['data-testid'] },
+        //     mode: 'jsx-only'
+        // }
+        // ]
         'no-unused-vars': 'warn',
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 }

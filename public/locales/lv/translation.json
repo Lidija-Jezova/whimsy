@@ -1,5 +1,7 @@
 {
     "Translate": "Tulkot",
     "Language": "Latviešu",
-    "pageNotFound": "Lapa nav atrasta"
+    "pageNotFound": "Lapa nav atrasta",
+    "unexpectedError": "Radās neparedzēta kļūda.",
+    "refreshPage": "Atsvaidzināt lapu"
 }

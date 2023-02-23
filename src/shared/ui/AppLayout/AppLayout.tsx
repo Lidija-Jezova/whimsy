@@ -14,7 +14,7 @@ const AppLayout = () => {
     }
 
     return (
-        <div className={classNames(styles.AppLayout, { [styles.collapsed]: collapsed }, [])}>
+        <div data-testid='app-layout' className={classNames(styles.AppLayout, { [styles.collapsed]: collapsed }, [])}>
             <Navbar />
             <Sidebar toggleCollapse={toggleSidebarCollapse} />
             <main>

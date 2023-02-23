@@ -13,10 +13,12 @@ export const Sidebar = (props: SidebarProps) => {
     const { className, toggleCollapse } = props
 
     return (
-        <aside className={classNames(styles.Sidebar, {}, [className])}>
+        <aside data-testid='sidebar' className={classNames(styles.Sidebar, {}, [className])}>
             <div className={styles.content}>
                 hello
-                <Button onClick={toggleCollapse}>Toggle</Button>
+                <Button data-testid='sidebar-toggle' onClick={toggleCollapse}>
+                    Toggle
+                </Button>
                 <LanguageSwitcher />
                 <nav>
                     <ul>

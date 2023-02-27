@@ -39,13 +39,6 @@ module.exports = {
             },
         ],
         'i18next/no-literal-string': 'warn',
-        //         [
-        //             'warn',
-        // {
-        //     'jsx-attributes': { exclude : ['data-testid'] },
-        //     mode: 'jsx-only'
-        // }
-        // ]
         'no-unused-vars': 'warn',
     },
     overrides: [

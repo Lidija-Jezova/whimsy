@@ -31,11 +31,17 @@
   },
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
+      "module": "CommonJS",
+      "plugins": [
+        {
+          "name": "typescript-plugin-css-modules"
+        }
+      ]
     }
   },
   "include": [
-    "./src",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
     "./config/jest/setup.ts"
   ]
 }

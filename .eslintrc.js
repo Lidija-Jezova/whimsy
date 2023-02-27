@@ -13,6 +13,7 @@ module.exports = {
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
         'prettier',
         'plugin:i18next/recommended',
+        'plugin:storybook/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -29,6 +30,7 @@ module.exports = {
         'no-duplicate-imports': 'warn',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
+        'react/display-name': 'off',
         '@typescript-eslint/ban-ts-comment': 'warn',
         '@typescript-eslint/consistent-type-imports': [
             'error',

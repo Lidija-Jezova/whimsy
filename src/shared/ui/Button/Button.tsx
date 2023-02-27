@@ -5,11 +5,12 @@ import type { ValueOf } from 'shared/lib/valueOf/valueOf'
 
 export const ButtonVariants = {
     CLEAR: 'clear',
+    OUTLINED: 'outlined'
 } as const
 
 type ButtonVariant = ValueOf<typeof ButtonVariants>
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string
     variant?: ButtonVariant
 }

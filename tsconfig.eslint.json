@@ -9,5 +9,6 @@
     "config",
     "src",
     ".eslintrc.js",
+    "webpack.config.ts"
   ]
 }

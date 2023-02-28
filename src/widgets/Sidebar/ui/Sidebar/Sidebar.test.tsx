@@ -5,7 +5,7 @@ import { renderWithTranslation } from 'shared/lib/renderWithTranslation/renderWi
 describe('Sidebar', () => {
     test('Test render', () => {
         const mockToggle = jest.fn()
-        renderWithTranslation(<Sidebar toggleCollapse={mockToggle} />)
+        renderWithTranslation(<Sidebar collapsed={false} toggleCollapse={mockToggle} />)
         expect(screen.getByTestId('sidebar')).toBeInTheDocument()
     })
 })

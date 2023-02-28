@@ -1,17 +1,85 @@
 .Button {
-    padding: 0.2rem 0.4rem;
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
+    padding: 0.4rem 1.2rem;
     cursor: pointer;
+    border-radius: 0.4rem;
+    border: none;
+    display: inline-block;
+}
+
+.primary {
+    background-color: #ff8d29;
+    color: var(--color-light);
 }
 
 .clear {
     border: none;
-    background: none;
     outline: none;
+    background: none;
     color: var(--primary-color);
 }
 
 .outlined {
+    background: none;
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
-    background: none;
+}
+
+.light {
+    background-color: var(--color-light);
+}
+
+.dark {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.inverted {
+    background-color: var(--inverted-bg-color);
+}
+
+.s-size {
+    min-height: var(--button-size-s);
+    font-size: var(--button-font-size-s);
+    line-height: var(--button-font-line-s);
+    padding: 0.2rem 0.6rem;
+}
+
+.default-size {
+    min-height: var(--button-size-default);
+    font-size: var(--button-font-size-default);
+    line-height: var(--button-font-line-default);
+    padding: 0.4rem 1.2rem;
+}
+
+.l-size {
+    min-height: var(--button-size-l);
+    font-size: var(--button-font-size-l);
+    line-height: var(--button-font-line-l);
+    padding: 0.8rem 1.8rem;
+}
+
+.square {
+    padding: 0;
+}
+
+.square.default-size {
+    width: var(--button-size-default);
+    height: var(--button-size-default);
+}
+
+.square.s-size {
+    width: var(--button-size-s);
+    height: var(--button-size-s);
+}
+
+.square.l-size {
+    width: var(--button-size-l);
+    height: var(--button-size-l);
+}
+
+.block {
+    width: 100%;
+    display: block;
 }

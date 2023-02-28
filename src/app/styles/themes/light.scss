@@ -1,6 +1,6 @@
 :root {
     --bg-color: #fff;
-    --inverted-bg-color: #18192c;
+    --inverted-bg-color: #252744;
 
     --primary-color: #22232a;
     --secondary-color: #2c2c2f;
@@ -8,10 +8,10 @@
     --inverted-primary-color: #fafaff;
     --inverted-secondary-color: #cfcfd3;
 
-    --navbar-bg: #252744;
+    --navbar-bg: var(--inverted-bg-color);
     --navbar-color: var(--inverted-primary-color);
 
-    --footer-bg: #252744;
+    --footer-bg: var(--inverted-bg-color);
     --footer-color: var(--inverted-primary-color);
 
     --sidebar-bg: #f1f1f1;

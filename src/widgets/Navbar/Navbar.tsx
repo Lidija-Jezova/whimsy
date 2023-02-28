@@ -12,20 +12,6 @@ export const Navbar = (props: NavbarProps) => {
     return (
         <header className={classNames(styles.Navbar, {}, [className])}>
             <div>App name</div>
-            <nav>
-                <ul>
-                    <li>
-                        <AppLink to={'/'} variant={AppLinkVariants.LIGHT}>
-                            Main
-                        </AppLink>
-                    </li>
-                    <li>
-                        <AppLink to={'/about'} variant={AppLinkVariants.LIGHT}>
-                            About
-                        </AppLink>
-                    </li>
-                </ul>
-            </nav>
         </header>
     )
 }

@@ -19,7 +19,7 @@ const AppLayout = () => {
             className={classNames(styles.AppLayout, { [styles.collapsed]: collapsed }, [])}
         >
             <Navbar />
-            <Sidebar toggleCollapse={toggleSidebarCollapse} />
+            <Sidebar collapsed={collapsed} toggleCollapse={toggleSidebarCollapse} />
             <main>
                 <Outlet />
             </main>

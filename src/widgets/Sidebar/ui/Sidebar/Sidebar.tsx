@@ -31,7 +31,6 @@ export const Sidebar = (props: SidebarProps) => {
                             <AppLink
                                 className={`${styles.link} ${styles.home}`}
                                 to={AppRoutes.MAIN}
-                                variant={AppLinkVariants.LIGHT}
                             >
                                 <HomeIcon />
                                 <span>Home</span>
@@ -41,9 +40,8 @@ export const Sidebar = (props: SidebarProps) => {
                             <AppLink
                                 className={`${styles.link} ${styles.about}`}
                                 to={AppRoutes.ABOUT}
-                                variant={AppLinkVariants.LIGHT}
                             >
-                                <AboutIcon/>
+                                <AboutIcon />
                                 <span>About</span>
                             </AppLink>
                         </li>

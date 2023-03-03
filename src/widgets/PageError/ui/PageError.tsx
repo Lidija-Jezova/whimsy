@@ -1,4 +1,3 @@
-import styles from './PageError.module.scss'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { useTranslation } from 'react-i18next'
 import { Button } from 'shared/ui/Button/Button'
@@ -17,7 +16,7 @@ export const PageError = (props: PageErrorProps) => {
     }
 
     return (
-        <div className={classNames(styles.PageError, {}, [className])}>
+        <div className={classNames('', {}, [className])}>
             <p>{t('unexpectedError')}</p>
             <Button onClick={reloadPage}>{t('refreshPage')}</Button>
         </div>

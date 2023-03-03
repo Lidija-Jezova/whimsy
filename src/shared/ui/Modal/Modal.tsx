@@ -27,16 +27,16 @@ export const Modal = (props: ModalProps) => {
     }
 
     useEffect(() => {
-        const keyDownHandle = (e: KeyboardEvent) => {
+        const handleKeyDown = (e: KeyboardEvent) => {
             if (e.code === 'Escape') {
                 handleClose()
             }
         }
 
-        if (isOpened) window.addEventListener('keydown', keyDownHandle)
+        if (isOpened) window.addEventListener('keydown', handleKeyDown)
 
         return () => {
-            window.removeEventListener('keydown', keyDownHandle)
+            window.removeEventListener('keydown', handleKeyDown)
         }
     }, [handleClose, isOpened])
 

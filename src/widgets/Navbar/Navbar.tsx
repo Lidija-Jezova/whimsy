@@ -14,7 +14,7 @@ export const Navbar = (props: ModalProps) => {
     const [isAuthModal, selIsAuthModal] = useState<boolean>(false)
 
     const handleToggleModal = () => {
-        selIsAuthModal(prev => !prev)
+        selIsAuthModal((prev) => !prev)
     }
 
     return (

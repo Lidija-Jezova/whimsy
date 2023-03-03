@@ -18,5 +18,5 @@ export const Primary = Template.bind({}) as ComponentStory<typeof Modal>
 
 Primary.args = {
     isOpened: true,
-    children: 'Login form'
+    children: 'Login form',
 }

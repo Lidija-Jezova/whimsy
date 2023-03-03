@@ -11,8 +11,8 @@ export default {
         backgroundColor: { control: 'color' },
     },
     args: {
-        to: '/'
-    }
+        to: '/',
+    },
 } as ComponentMeta<typeof AppLink>
 
 const Template: ComponentStory<typeof AppLink> = (args) => <AppLink {...args} />

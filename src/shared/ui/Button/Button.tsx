@@ -9,7 +9,7 @@ export const ButtonVariants = {
     OUTLINED: 'outlined',
     LIGHT: 'light',
     DARK: 'dark',
-    INVERTED: 'inverted'
+    INVERTED: 'inverted',
 } as const
 
 type ButtonVariant = ValueOf<typeof ButtonVariants>
@@ -49,10 +49,7 @@ export const Button = (props: ButtonProps) => {
     const additionalStyles = [className, styles[variant], styles[size]]
 
     return (
-        <button
-            className={classNames(styles.Button, modifiers, additionalStyles)}
-            {...otherProps}
-        >
+        <button className={classNames(styles.Button, modifiers, additionalStyles)} {...otherProps}>
             {children}
         </button>
     )

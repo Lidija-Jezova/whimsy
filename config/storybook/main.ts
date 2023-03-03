@@ -2,7 +2,7 @@ import type webpack from 'webpack'
 import type { RuleSetRule } from 'webpack'
 import path from 'path'
 import { buildStylesLoader } from '../build/loaders/buildStylesLoader'
-import {BuildSvgLoader} from '../build/loaders/buildSvgLoader';
+import { BuildSvgLoader } from '../build/loaders/buildSvgLoader'
 
 module.exports = {
     stories: ['../../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -10,7 +10,7 @@ module.exports = {
         '@storybook/addon-links',
         '@storybook/addon-essentials',
         '@storybook/addon-interactions',
-        'storybook-addon-react-router-v6'
+        'storybook-addon-react-router-v6',
     ],
     framework: '@storybook/react',
     core: {

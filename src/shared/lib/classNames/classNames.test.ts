@@ -6,7 +6,9 @@ describe('classNames', () => {
     })
 
     test('with additional classes', () => {
-        expect(classNames('someClass', {}, ['addClass1 addClass2'])).toBe('someClass addClass1 addClass2')
+        expect(classNames('someClass', {}, ['addClass1 addClass2'])).toBe(
+            'someClass addClass1 addClass2',
+        )
     })
 
     test('with additional classes2', () => {
@@ -15,11 +17,15 @@ describe('classNames', () => {
 
     test('with all params', () => {
         const expected = 'someClass addClass1 addClass2 hovered'
-        expect(classNames('someClass', {hovered: true, hidden: false}, ['addClass1 addClass2'])).toBe(expected)
+        expect(
+            classNames('someClass', { hovered: true, hidden: false }, ['addClass1 addClass2']),
+        ).toBe(expected)
     })
 
     test('with all params2', () => {
         const expected = 'someClass addClass1 addClass2 hovered hidden'
-        expect(classNames('someClass', {hovered: true, hidden: true}, ['addClass1 addClass2'])).toBe(expected)
+        expect(
+            classNames('someClass', { hovered: true, hidden: true }, ['addClass1 addClass2']),
+        ).toBe(expected)
     })
 })

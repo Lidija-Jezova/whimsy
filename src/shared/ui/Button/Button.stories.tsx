@@ -1,7 +1,7 @@
 import React from 'react'
 import type { ComponentStory, ComponentMeta } from '@storybook/react'
 
-import {Button, ButtonSizes, ButtonVariants} from './Button'
+import { Button, ButtonSizes, ButtonVariants } from './Button'
 
 export default {
     title: 'shared/Button',
@@ -24,21 +24,21 @@ export const Small = Template.bind({}) as ComponentStory<typeof Button>
 
 Small.args = {
     children: 'Text',
-    size: ButtonSizes.S
+    size: ButtonSizes.S,
 }
 
 export const Large = Template.bind({}) as ComponentStory<typeof Button>
 
 Large.args = {
     children: 'Text',
-    size: ButtonSizes.L
+    size: ButtonSizes.L,
 }
 
 export const Square = Template.bind({}) as ComponentStory<typeof Button>
 
 Square.args = {
     children: 'Text',
-    square: true
+    square: true,
 }
 
 export const SquareSizeS = Template.bind({}) as ComponentStory<typeof Button>
@@ -46,7 +46,7 @@ export const SquareSizeS = Template.bind({}) as ComponentStory<typeof Button>
 SquareSizeS.args = {
     children: 'Text',
     square: true,
-    size: ButtonSizes.S
+    size: ButtonSizes.S,
 }
 
 export const SquareSizeL = Template.bind({}) as ComponentStory<typeof Button>
@@ -54,7 +54,7 @@ export const SquareSizeL = Template.bind({}) as ComponentStory<typeof Button>
 SquareSizeL.args = {
     children: 'Text',
     square: true,
-    size: ButtonSizes.L
+    size: ButtonSizes.L,
 }
 
 export const Clear = Template.bind({}) as ComponentStory<typeof Button>

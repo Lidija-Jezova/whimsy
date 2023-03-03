@@ -1,0 +1,50 @@
+.Modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: -1;
+    transition: all 0.2s ease 0s;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--overlay-color-none);
+    transition: background-color 0.2s ease 0s;
+}
+
+.content {
+    padding: 2rem;
+    min-width: 20rem;
+    max-width: 50%;
+    min-height: 20rem;
+    background-color: var(--bg-color);
+    border-radius: 0.8rem;
+    transform: translateY(-20%);
+    transition: transform 0.2s ease 0s;
+}
+
+.opened {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: var(--modal-z-index);
+
+    .overlay {
+        background-color: var(--overlay-color);
+    }
+
+    .content {
+        transform: translateY(0%);
+    }
+}
+
+

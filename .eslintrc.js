@@ -14,6 +14,7 @@ module.exports = {
         'prettier',
         'plugin:i18next/recommended',
         'plugin:storybook/recommended',
+        'plugin:react-hooks/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -22,7 +23,7 @@ module.exports = {
         project: ['./tsconfig.eslint.json'],
         tsconfigRootDir: './',
     },
-    plugins: ['react', '@typescript-eslint', 'i18next'],
+    plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
     rules: {
         quotes: ['error', 'single', 'avoid-escape'],
         camelcase: 'error',
@@ -40,6 +41,8 @@ module.exports = {
         ],
         'i18next/no-literal-string': 'warn',
         'no-unused-vars': 'warn',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'error',
     },
     overrides: [
         {

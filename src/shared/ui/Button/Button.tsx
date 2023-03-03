@@ -41,16 +41,16 @@ export const Button = (props: ButtonProps) => {
         ...otherProps
     } = props
 
-    const modifierClasses = {
+    const modifiers = {
         [styles.square]: square,
         [styles.block]: block,
     }
 
-    const additionalClasses = [className, styles[variant], styles[size]]
+    const additionalStyles = [className, styles[variant], styles[size]]
 
     return (
         <button
-            className={classNames(styles.Button, modifierClasses, additionalClasses)}
+            className={classNames(styles.Button, modifiers, additionalStyles)}
             {...otherProps}
         >
             {children}

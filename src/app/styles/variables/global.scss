@@ -33,4 +33,14 @@
     --button-font-line-s: var(--font-line-s);
     --button-font-line-default: var(--font-line-m);
     --button-font-line-l: var(--font-line-m);
+
+    // Z indexes
+
+    --modal-z-index: 10;
+
+    // Colors
+
+    --overlay-color: rgb(0 0 0 / 50%);
+    --overlay-color-none: rgb(0 0 0 / 0%);
+
 }
